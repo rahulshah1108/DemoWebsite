@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    line-height:1.5em;
+}
+#header {
+    background:#047aed;
+    color:#fff;
+    height:70px;
+}
+.logo {
+    font-family:'Lato', sans-serif;
+    font-size:30px;
+    font-weight:300;
+    padding:20px;
+    padding-top:30px;
+    padding-left:200px;
+    margin-bottom:-50px;
+}
+
+ul {
+    display:flex;
+    justify-content: flex-end;
+    
+}
+li{
+    list-style-type: none;
+    padding:1px;
+    margin-right:80px;
+}
+a {
+    text-decoration:none;
+    color:#fff;
+    font-weight:300;
+}
+
+a:hover{
+    border-bottom:1px solid #fff;
+}
+
+.main {
+    background:#047aed;
+    color:#fff;
+    height:300px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.text {
+    padding-left:10px;
+    padding-top:90px;
+    padding-left:30px;
+    width:80%;
+    text-align:center;
+    animation: SlideInFromLeft 1s ease-in;
+}
+
+.text h2{
+    font-size:30px;
+    font-weight:300;
+}
+.text p{
+    font-size:18px;
+    font-weight:180;
+    text-align:center;
+    margin-top:10px;
+    float:right;
+}
+
+.form{
+    
+    border-radius:10px;
+    background:#fff;
+    margin-left:115px;
+    margin-top:85px;
+    width:320px;
+    height:310px;
+    overflow:visible;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    animation: SlideInFromRight 1s ease-in;
+}
+
+.form h4{
+    color:#333;
+    font-weight:300;
+    font-size:25px;
+    text-align:center;
+    padding-top:20px;
+}
+form input[type='text'],
+form input[type='email'] {
+    margin-top:32px;
+    padding: 3px;
+    font-size: 16px;
+    border:0;
+    border-bottom:1px solid #b4becb;
+    width:80%;
+}
+form input:focus{
+    outline:none;
+}
+.button-1{
+    text-align:center;
+    margin:100px;
+}
+form input[type='submit'] {
+margin-top:30px;
+padding:6px 25px;
+border-radius:5px;
+background:#047aed;
+border:0;
+color:#fff;
+cursor:pointer;
+text-align:center;
+font-size:16px;
+font-weight:300;
+}
+
+form input[type='submit']:hover {
+    transform:scale(1.08);
+}
+
+.paragraph {
+    text-align: center;
+    margin-top:140px;
+    font-size:18px;
+    font-weight:300;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap:10%;
+    padding-top:70px;
+    margin-left: 225px;
+    animation: SlideInFromBottom 1s ease-in;
+}
+
+.secondary {
+    color:#0080ff;
+    font-weight:400;
+    padding-top:10px;
+}
+
+img {
+    width:700px;
+    height:130px;
+    margin-left: 115px;
+    margin-top: 30px;
+}
+.card {
+    border: 2px solid #fff;
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px; 
+    color:#333;
+    font-weight: 300;
+    height:50px;
+    width:300px;
+    text-align: center;
+    padding-top:15px;
+}
+.grids{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:3%;
+}
+
+.grids > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 /span 2;
+}
+#cloud-hosting {
+    margin-top:25px;
+    background-color: #047aed;
+}
+.writing {
+    text-align:center;
+    margin-top:100px;
+    line-height: 3em;
+    font-weight:300;
+    color:#fff;
+}
+
+.writing h6 {
+    font-size:40px;
+    font-weight: 200;
+}
+.writing p {
+    font-size:18px;
+    font-weight: 300;
+}
+
+.ch-image img{
+    height:250px;
+    width: 500px;
+}
+.hosting {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.writing .button-1 {
+    border: 1px solid #fff;
+    padding:10px;
+    background:#000;
+}
+
+#footer {
+    background: #022d57;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:50px;
+}
+.typo h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+.navs a{
+    padding:20px;
+}
+
+.navs a:hover{
+    border: 1px solid #fff;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color:#fff;
+}
+.social a {
+    padding:20px;
+    font-size: 25px;
+}
+.social a:hover{
+    border:0;
+} 
+
+@keyframes SlideInFromLeft {
+    0% {
+        transform:translateX(-100%)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes SlideInFromRight {
+    0% {
+        transform:translateX(100%)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes SlideInFromTop {
+    0% {
+        transform:translateY(-100%)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes SlideInFromBottom {
+    0% {
+        transform:translateY(100%)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width:768px) {
+    .logo {
+        margin-left:-90px;
+    }
+    .text {
+        margin-left:60px;
+    }
+    .form{
+    
+        border-radius:10px;
+        background:#fff;
+        margin-left:100px;
+        margin-top:85px;
+        width:320px;
+        height:310px;
+        overflow:visible;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        animation: SlideInFromRight 1s ease-in;
+    }
+    .grid{
+        margin-left:140px
+    }
+    .grids {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grids img {
+        margin-left:30px;
+    }
+    .card {
+        margin-left: 40px;
+    }
+    .hosting {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .writing{
+        margin-left:80px;
+    }
+    #footer {
+        background: #022d57;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom:50px;
+        margin-top: 20px;
+    }
+    .write{
+        font-weight: 300;
+        margin-left:60px;
+        margin-top:30px;
+        line-height: 1.6em;
+    }
+    .navs a{
+        padding:10px;
+    }
+    .social a {
+        padding:10px;
+        font-size: 25px;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .logo {
+        font-family:'Lato', sans-serif;
+        font-size:30px;
+        font-weight:300;
+        margin-bottom:-10px;
+        text-align:start;
+        background:rgba(0, 0, 0, 0.1);
+        padding-left:250px;
+    }
+    
+     .one ul {
+        display:flex;
+        justify-content: center;
+        padding:10px;
+        margin-left:70px;
+        
+     }
+
+     .one a {
+         color:#fff;
+         border-bottom: 1px solid #fff;
+     }
+     .main{
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .text {
+         margin-left:20px;
+     }
+     .grid {
+         margin-left: 20px;
+     }
+     .form{
+         margin-top:40px;
+         margin-left:50px;
+     }
+
+     .paragraph{
+         margin-top:290px;
+     }
+     .grids img {
+         width:360px;
+         height:100px;
+     }
+     .hosting {
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .writing {
+         margin-left:10px;
+         line-height: 2.5em;
+     }
+     .ch-image img{
+         margin-left:10px;
+         width:400px;
+     }
+     #footer {
+        background: #022d57;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom:50px;
+        margin-top: 1px;
+    }
+    .navs a{
+        padding:30px;
+        line-height: 2em;
+    }
+    .social a {
+        padding:20px;
+        font-size: 25px;
+        line-height: 2em;
+    }
+    .typo h5{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 2em;
+    }
+    }
+    @media(min-width:320px) and (max-width:360px) {
+        .logo {
+            font-family:'Lato', sans-serif;
+            font-size:30px;
+            font-weight:300;
+            padding-left:220px;
+            margin-bottom:-10px;
+            text-align:start;
+            background:rgba(0, 0, 0, 0.1);
+        }
+        .form{
+            margin-top:40px;
+            margin-left:10px;
+        }
+        .paragraph{
+            margin-top:320px;
+        }
+        .grid {
+            margin-left: 5px;
+        }
+        .card {
+            margin-left: 10px;
+        }
+        .grids img {
+            margin-left:1px;
+            width:320px;
+            height:100px;
+        }
+        .ch-image img{
+            margin-left:-15px;
+            width:370px;
+        }
+
+    }
+
+    @media(min-width:361px) and (max-width:375px) {
+        .logo {
+            font-family:'Lato', sans-serif;
+            font-size:30px;
+            font-weight:300;
+            padding-left:230px;
+            margin-bottom:-10px;
+            text-align:start;
+            background:rgba(0, 0, 0, 0.1);
+        }
+        .form{
+            margin-top:40px;
+            margin-left:20px;
+        }
+        .ch-image img{
+            margin-left:-10px;
+            width:370px;
+        }
+        .grids img {
+            margin-left:5px;
+            width:350px;
+            height:100px;
+    }
+}
