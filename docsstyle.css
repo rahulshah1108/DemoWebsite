@@ -258,6 +258,9 @@ code {
 .navs a{
     padding:10px;
 }
+.navs a:hover{
+    border:0;
+}
 .social a {
     padding:10px;
     font-size: 25px;
@@ -337,6 +340,9 @@ code {
     .navs a{
         padding:30px;
         line-height: 2em;
+    }
+    .navs a:hover{
+        border:0;
     }
     .social a {
         padding:20px;
