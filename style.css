@@ -361,6 +361,9 @@ img {
         margin-left:80px;
         
      }
+     .one .ft {
+         border:0;
+     }
 
      .one a {
          color:#fff;
@@ -412,6 +415,7 @@ img {
         display:flex;
         flex-wrap: wrap;
     }
+    
     .navs a{
         padding-top:5px;
         margin-left:30px;
