@@ -337,8 +337,14 @@ code {
         padding-bottom:50px;
         margin-top: 20px;
     }
+    .navs {
+        display:flex;
+        flex-wrap: wrap;
+    }
     .navs a{
-        padding:30px;
+        padding-top:5px;
+        margin-left:30px;
+        padding:5px;
         line-height: 2em;
     }
     .navs a:hover{
